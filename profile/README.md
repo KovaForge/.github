@@ -23,7 +23,7 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## What We Build
 
-- **[XerahS](https://github.com/ShareX/XerahS)** — AI-native coding environment with hotkey-driven workflows
+- **[XerahS](https://github.com/KovaForge/XerahS)** — AI-native coding environment with hotkey-driven workflows
 - **[mission-control](https://github.com/KovaForge/mission-control)** — Internal operations dashboard *(private)*
 - **[openclaw-config](https://github.com/KovaForge/openclaw-config)** — OpenClaw agent configuration *(private)*
 
