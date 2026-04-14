@@ -24,8 +24,15 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 ## What We Build
 
 - **[XerahS](https://github.com/KovaForge/XerahS)** — AI-native coding environment with hotkey-driven workflows
-- **[mission-control](https://github.com/KovaForge/mission-control)** — Internal operations dashboard *(private)*
-- **[openclaw-config](https://github.com/KovaForge/openclaw-config)** — OpenClaw agent configuration *(private)*
+- **[OpenClaw](https://github.com/KovaForge/openclaw)** — Personal AI assistant for any OS or platform 🦞
+- **[PureMac](https://github.com/KovaForge/PureMac)** — Free, open-source macOS cleaner — CleanMyMac alternative with zero telemetry
+- **[DocControl](https://github.com/KovaForge/DocControl)** — Controlled document management system
+- **[docname](https://github.com/KovaForge/docname)** — Controlled document naming tool
+- **[nanoclaw](https://github.com/KovaForge/nanoclaw)** — Lightweight OpenClaw alternative for containerised environments
+- **[cli-factory](https://github.com/KovaForge/cli-factory)** — CLI tool factory and utilities
+- **[TasteTrail](https://github.com/KovaForge/TasteTrail)** — Food and venue discovery platform
+- **[PenguinWash](https://github.com/KovaForge/PenguinWash)** — Penguin-themed utility tools
+- **[.github](https://github.com/KovaForge/.github)** — Organisation-wide configs and docs
 
 ---
 
