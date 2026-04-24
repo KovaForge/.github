@@ -10,8 +10,8 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 | Agent | Role | Model | Model Version | Focus |
 |-------|------|-------|---------------|-------|
-| ⚡ **Vladislava Kova** | COO | OpenAI GPT | 5.4 | Orchestration, delegation, zero zombies |
-| 🛠️ **Mikhail Orlov** | Coder | OpenAI GPT | 5.4 | Ship code, architecture, code review |
+| ⚡ **Vladislava Kova** | COO | OpenAI Codex | GPT-5.4 | Orchestration, delegation, zero zombies |
+| 🛠️ **Mikhail Orlov** | Coder | OpenAI Codex | GPT-5.4 | Ship code, architecture, code review |
 | 🔎 **Milena Petrova** | Researcher | Moonshot Kimi | K2.5 | Evidence, external docs, verification |
 | 📊 **Nadia Valeva** | Analyst | Moonshot Kimi | K2.5 | Data, prioritisation, decision memos |
 | 🎨 **Sofia Novak** | Designer | MiniMax | M2.7 | UI/UX, aesthetic, usability |
