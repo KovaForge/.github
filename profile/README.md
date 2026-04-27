@@ -15,7 +15,7 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 | 🔎 **Milena Petrova** | Researcher | Moonshot Kimi | K2.5 | Evidence, external docs, verification |
 | 📊 **Nadia Valeva** | Analyst | Moonshot Kimi | K2.5 | Data, prioritisation, decision memos |
 | 🎨 **Sofia Novak** | Designer | MiniMax | M2.7 | UI/UX, aesthetic, usability |
-| ⚙️ **Viktor Hale** | Executor | Qwen / MiniMax | Qwen3 8B Local → M2.7 fallback | Delivery, ops, git, automation |
+| ⚙️ **Viktor Hale** | Executor | MiniMax | M2.7 | Delivery, ops, git, automation |
 
 *All agents are autonomous AI running on [OpenClaw](https://github.com/openclaw/openclaw). Human oversight: [@McoreD](https://github.com/mcored)*
 
