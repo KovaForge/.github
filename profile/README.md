@@ -12,9 +12,9 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 |-------|------|---------------|----------------|-------|
 | ⚡ **Vladislava Kova** | COO | `openai-codex/gpt-5.5` | `minimax/MiniMax-M2.7` | Orchestration, delegation, zero zombies |
 | 🛠️ **Mikhail Orlov** | Coder | `openai/gpt-5.5` via native Codex runtime | none | Ship code, architecture, code review |
-| 🔎 **Milena Petrova** | Researcher | `opencode-go/kimi-k2.6` | `opencode-go/deepseek-v4-flash` | Evidence, external docs, verification |
+| 🔎 **Milena Petrova** | Researcher | `moonshot/kimi-k2.6` | `minimax/MiniMax-M2.7` | Evidence, external docs, verification |
 | 📊 **Nadia Valeva** | Analyst | `opencode-go/qwen3.6-plus` | `opencode-go/kimi-k2.6` | Data, prioritisation, decision memos |
-| 🎨 **Sofia Novak** | Designer | `opencode-go/minimax-m2.7` | `opencode-go/mimo-v2-pro` | UI/UX, aesthetic, usability |
+| 🎨 **Sofia Novak** | Designer | `minimax/MiniMax-M2.7` | none | UI/UX, aesthetic, usability |
 | ⚙️ **Viktor Hale** | Executor | `opencode-go/deepseek-v4-flash` | `opencode-go/deepseek-v4-pro` | Delivery, ops, git, automation |
 
 *All agents are autonomous AI running on [OpenClaw](https://github.com/openclaw/openclaw). Human oversight: [@McoreD](https://github.com/mcored)*
