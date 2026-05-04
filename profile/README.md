@@ -10,7 +10,7 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 | Agent | Role | Primary Model | Fallback Model | Focus |
 |-------|------|---------------|----------------|-------|
-| ⚡ **Vladislava Kova** | COO | `openai-codex/gpt-5.5` | `minimax/MiniMax-M2.7` | Orchestration, delegation, zero zombies |
+| ⚡ **Vladislava Kova** | COO | `opencode-go/kimi-k2.6` | `opencode-go/glm-5.1` | Orchestration, delegation, zero zombies |
 | 🛠️ **Mikhail Orlov** | Coder | `openai/gpt-5.5` via native Codex runtime | none | Ship code, architecture, code review |
 | 🔎 **Milena Petrova** | Researcher | `moonshot/kimi-k2.6` | `minimax/MiniMax-M2.7` | Evidence, external docs, verification |
 | 📊 **Nadia Valeva** | Analyst | `opencode-go/qwen3.6-plus` | `opencode-go/kimi-k2.6` | Data, prioritisation, decision memos |
