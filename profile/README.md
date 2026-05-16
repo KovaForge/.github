@@ -8,14 +8,14 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## The Team
 
-_Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read live on 2026-05-14._
+_Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read live on 2026-05-17._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
 | ⚡ **Vladislava Kova** | COO | `minimax` | `MiniMax-M2.7` | none | Orchestration, delegation, zero zombies |
-| 🛠️ **Mikhail Orlov** | Coder | `openai` via native Codex runtime | `gpt-5.5` | none | Ship code, architecture, code review |
-| 📊 **Nadia Valeva** | Analyst | `opencode-go` | `glm-5.1` | none | Research, evidence, data, prioritisation, decision memos |
-| ⚙️ **Viktor Hale** | Executor | `opencode-go` | `kimi-k2.5` | none | Delivery, ops, git, automation |
+| 🛠️ **Mikhail Orlov** | Coder | `opencode-go` | `deepseek-v4-pro` | none | Ship code, architecture, code review |
+| 📊 **Nadia Valeva** | Analyst | `opencode-go` | `kimi-k2.5` | none | Research, evidence, data, prioritisation, decision memos |
+| ⚙️ **Viktor Hale** | Executor | `opencode-go` | `glm-5` | none | Delivery, ops, git, automation |
 
 *All KovaForge agents are autonomous AI running on [OpenClaw](https://github.com/openclaw/openclaw). Human oversight: [@McoreD](https://github.com/mcored)*
 
@@ -44,7 +44,7 @@ _Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read liv
 
 ### BriarForge Members
 
-_Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-14._
+_Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-17._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
@@ -59,19 +59,18 @@ BriarForge operates under the KovaForge umbrella with separate leadership, memor
 
 ## Combined Model Inventory
 
-_Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Users/mike/.hermes/config.yaml` plus `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-14._
+_Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Users/mike/.hermes/config.yaml` plus `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-17._
 
 | Model Version | Provider | Platform | Member | Fallback Model | Notes |
 |---------------|----------|----------|--------|----------------|-------|
 | `MiniMax-M2.7` | `minimax` | OpenClaw | ⚡ **Vladislava Kova** | none | Embedded OpenClaw runtime |
-| `deepseek-v4-pro` | `opencode-go` | Hermes / BriarForge | 🏗️ **Declan Murphy** | none | Routed through OpenCode Go |
-| `glm-5.1` | `opencode-go` | OpenClaw | 📊 **Nadia Valeva** | none | Routed through OpenCode Go |
-| `gpt-5.5` | `openai` | OpenClaw | 🛠️ **Mikhail Orlov** | none | Native Codex runtime |
-| `gpt-5.3-codex` | `openai-codex` | Hermes root | Hermes default | none | Codex backend API route |
-| `kimi-k2.5` | `opencode-go` | OpenClaw | ⚙️ **Viktor Hale** | none | Routed through OpenCode Go |
-| `kimi-k2.5` | `opencode-go` | Hermes / BriarForge | 🔎 **Milena Petrova** | none | Routed through OpenCode Go |
+| `deepseek-v4-pro` | `opencode-go` | OpenClaw | 🛠️ **Mikhail Orlov** | none | Routed through OpenCode Go via ACP/Codex |
+| `glm-5` | `opencode-go` | OpenClaw | ⚙️ **Viktor Hale** | none | Routed through OpenCode Go |
+| `gpt-5.5` | `openai-codex` | Hermes / BriarForge | 🏗️ **Declan Murphy** | none | Routed through OpenCode Go |
+| `kimi-k2.5` | `opencode-go` | OpenClaw | 📊 **Nadia Valeva** | none | Routed through OpenCode Go |
 | `mimo-v2-omni` | `opencode-go` | Hermes / BriarForge | 🎨 **Sofia Novak** | none | Routed through OpenCode Go |
 | `qwen3.6-plus` | `opencode-go` | Hermes / BriarForge | 🧭 **Aoife Brennan** | none | Routed through OpenCode Go |
+| `glm-5.1` | `opencode-go` | Hermes / BriarForge | 🔎 **Milena Petrova** | none | Routed through OpenCode Go |
 
 ---
 
