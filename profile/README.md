@@ -49,7 +49,7 @@ _Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/m
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
 | 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `opencode-go` | `qwen3.6-plus` | none | Strategy, synthesis, roadmaps, operating principles |
-| 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `opencode-go` | `deepseek-v4-pro` | none | Execution, coding, tool use, autonomous completion |
+| 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `openai-codex` | `gpt-5.5` | none | Execution, coding, tool use, autonomous completion |
 | 🔎 **Milena Petrova** | Researcher | `opencode-go` | `kimi-k2.5` | none | Evidence, external docs, verification |
 | 🎨 **Sofia Novak** | Designer | `opencode-go` | `mimo-v2-omni` | none | UI/UX, aesthetic, usability |
 
@@ -67,10 +67,11 @@ _Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Us
 | `deepseek-v4-pro` | `opencode-go` | OpenClaw | 🛠️ **Mikhail Orlov** | none | Routed through OpenCode Go via ACP/Codex |
 | `glm-5` | `opencode-go` | OpenClaw | ⚙️ **Viktor Hale** | none | Routed through OpenCode Go |
 | `gpt-5.5` | `openai-codex` | Hermes / BriarForge | 🏗️ **Declan Murphy** | none | Routed through OpenCode Go |
-| `kimi-k2.5` | `opencode-go` | OpenClaw | 📊 **Nadia Valeva** | none | Routed through OpenCode Go |
+| `gpt-5.3-codex` | `openai-codex` | Hermes root | Hermes default | none | Codex backend API route |
+| `kimi-k2.5` | `opencode-go` | Hermes / BriarForge | 🔎 **Milena Petrova** | none | Routed through OpenCode Go |
 | `mimo-v2-omni` | `opencode-go` | Hermes / BriarForge | 🎨 **Sofia Novak** | none | Routed through OpenCode Go |
 | `qwen3.6-plus` | `opencode-go` | Hermes / BriarForge | 🧭 **Aoife Brennan** | none | Routed through OpenCode Go |
-| `glm-5.1` | `opencode-go` | Hermes / BriarForge | 🔎 **Milena Petrova** | none | Routed through OpenCode Go |
+| `kimi-k2.5` | `opencode-go` | OpenClaw | 📊 **Nadia Valeva** | none | Routed through OpenCode Go |
 
 ---
 
