@@ -8,7 +8,7 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## The Team
 
-_Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read live on 2026-05-24._
+_Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read live on 2026-05-26._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
@@ -44,11 +44,11 @@ _Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read liv
 
 ### BriarForge Members
 
-_Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-24._
+_Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-26._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
-| 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `opencode-go` | `qwen3.6-plus` | none | Strategy, synthesis, roadmaps, operating principles |
+| 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `minimax` | `minimax-m2.7` | `opencode-go qwen3.6-plus` | Strategy, synthesis, roadmaps, operating principles |
 | 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `openai-codex` | `gpt-5.5` | none | Execution, coding, tool use, autonomous completion |
 | 🔎 **Milena Petrova** | Researcher | `opencode-go` | `glm-5.1` | none | Evidence, external docs, verification |
 | 🎨 **Sofia Novak** | Designer | `opencode-go` | `mimo-v2-omni` | none | UI/UX, aesthetic, usability |
@@ -59,18 +59,21 @@ BriarForge operates under the KovaForge umbrella with separate leadership, memor
 
 ## Combined Model Inventory
 
-_Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Users/mike/.hermes/config.yaml` plus `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-24._
+_Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Users/mike/.hermes/config.yaml` plus `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-05-26._
 
 | Model Version | Provider | Platform | Member | Fallback Model | Notes |
 |---------------|----------|----------|--------|----------------|-------|
 | `MiniMax-M2.7` | `minimax` | OpenClaw | ⚡ **Vladislava Kova** | none | Embedded OpenClaw runtime |
 | `deepseek-v4-pro` | `opencode-go` | OpenClaw | 🛠️ **Mikhail Orlov** | `MiniMax-M2.7` | Routed through OpenCode Go via ACP/Codex |
-| `grok-4.3` | `xai` | OpenClaw | ⚙️ **Viktor Hale** | `MiniMax-M2.7` | Routed through OpenCode Go |
+| `grok-4.3` | `xai` | OpenClaw | ⚙️ **Viktor Hale** | `MiniMax-M2.7` | Primary reasoning model |
+| `grok-4.20-beta-latest-reasoning` | `xai` | OpenClaw | ⚙️ **Viktor Hale** | `MiniMax-M2.7` | Extended context (2M), reasoning variant |
+| `grok-4.20-beta-latest-non-reasoning` | `xai` | OpenClaw | ⚙️ **Viktor Hale** | `MiniMax-M2.7` | Extended context (2M), non-reasoning variant |
 | `gpt-5.5` | `openai-codex` | Hermes / BriarForge | 🏗️ **Declan Murphy** | none | Routed through OpenCode Go |
 | `gpt-5.3-codex` | `openai-codex` | Hermes root | Hermes default | none | Codex backend API route |
 | `glm-5.1` | `opencode-go` | Hermes / BriarForge | 🔎 **Milena Petrova** | none | Routed through OpenCode Go |
 | `mimo-v2-omni` | `opencode-go` | Hermes / BriarForge | 🎨 **Sofia Novak** | none | Routed through OpenCode Go |
-| `qwen3.6-plus` | `opencode-go` | Hermes / BriarForge | 🧭 **Aoife Brennan** | none | Routed through OpenCode Go |
+| `minimax-m2.7` | `minimax` | Hermes / BriarForge | 🧭 **Aoife Brennan** | `opencode-go qwen3.6-plus` | Primary model; OpenCode Go qwen3.6-plus as fallback |
+| `qwen3.6-plus` | `opencode-go` | Hermes / BriarForge | 🧭 **Aoife Brennan** | `minimax-m2.7` | Fallback |
 | `kimi-k2.5` | `opencode-go` | OpenClaw | 📊 **Nadia Valeva** | `MiniMax-M2.7` | Routed through OpenCode Go |
 
 ---
