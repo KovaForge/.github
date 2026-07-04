@@ -10,6 +10,10 @@ All git activity in this repo MUST go through a per-person wrapper. No bare `git
 | Mikhail | `git-mikhail` |
 | Declan | `git-declan` |
 | Vladislava | `git-vladislava` |
+| Nadia | `git-nadia` |
+| Milena | `git-milena` |
+| Sofia | `git-sofia` |
+| Viktor | `git-viktor` |
 
 Whoever pushes uses their own wrapper. Example: Declan pushes with `git-declan push`, Vladislava with `git-vladislava push`. Wrappers set committer identity and route the push to the correct per-person remote on the matching `github-<person>` SSH host.
 
