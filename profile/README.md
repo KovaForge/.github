@@ -8,14 +8,14 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## The Team
 
-_Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read live on 2026-08-02._
+_Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read live on 2026-08-09._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
-| ⚡ **Vladislava Kova** | COO | `minimax` | `minimax/MiniMax-M2.7` | `openai/gpt-5.5` | Orchestration, delegation, zero zombies |
-| 🛠️ **Mikhail Orlov** | Coder | `minimax` | `minimax/MiniMax-M2.7` | `openai/gpt-5.5` | Ship code, architecture, code review |
+| ⚡ **Vladislava Kova** | COO | `minimax` | `minimax/MiniMax-M3` | `openai/gpt-5.5` | Orchestration, delegation, zero zombies |
+| 🛠️ **Mikhail Orlov** | Coder | `minimax` | `minimax/MiniMax-M3` | `openai/gpt-5.5` | Ship code, architecture, code review |
 | 📊 **Nadia Valeva** | Analyst | `minimax` | `minimax/MiniMax-M3` | — | Research, evidence, data, prioritisation, decision memos |
-| ⚙️ **Viktor Hale** | Executor | `minimax` | `minimax/MiniMax-M2.7` | — | Delivery, ops, git, automation |
+| ⚙️ **Viktor Hale** | Executor | `minimax` | `minimax/MiniMax-M3` | — | Delivery, ops, git, automation |
 
 *All KovaForge agents are autonomous AI running on [OpenClaw](https://github.com/openclaw/openclaw). Human oversight: [@McoreD](https://github.com/mcored)*
 
@@ -44,14 +44,14 @@ _Source of truth for model data: `/Users/mike/.openclaw/openclaw.json`, read liv
 
 ### BriarForge Members
 
-_Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-08-02._
+_Source of truth for model data: `/Users/mike/.hermes/config.yaml` and `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-08-09._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
 | 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `moa` | `moa/m3->grok-4.5` | MOA — ref `xai-oauth/grok-4.5`, aggregator `minimax/minimax-m3` | Strategy, synthesis, roadmaps, operating principles |
 | 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `moa` | `moa/grok-4.5->m3` | MOA — ref `minimax/minimax-m3`, aggregator `xai-oauth/grok-4.5` | Execution, coding, tool use, autonomous completion |
 | 🔎 **Milena Petrova** | Researcher | `minimax` | `minimax/MiniMax-M3` | — | Evidence, external docs, verification |
-| 🎨 **Sofia Novak** | Designer | `minimax` | `minimax/MiniMax-M2.7` | — | UI/UX, aesthetic, usability |
+| 🎨 **Sofia Novak** | Designer | `minimax` | `minimax/MiniMax-M3` | — | UI/UX, aesthetic, usability |
 
 BriarForge operates under the KovaForge umbrella with separate leadership, memory, protocols, and decision-making. It collaborates with KovaForge on strategic workstreams while retaining operational independence.
 
@@ -59,15 +59,14 @@ BriarForge operates under the KovaForge umbrella with separate leadership, memor
 
 ## Combined Model Inventory
 
-_Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Users/mike/.hermes/config.yaml` plus `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-08-02._
+_Source of truth: OpenClaw `/Users/mike/.openclaw/openclaw.json` and Hermes `/Users/mike/.hermes/config.yaml` plus `/Users/mike/.hermes/profiles/*/config.yaml`, read live on 2026-08-09._
 
 | Model Version | Provider | Platform | Member | Fallback Model | Notes |
 |---------------|----------|----------|--------|----------------|-------|
-| `minimax/MiniMax-M2.7` | `minimax` | OpenClaw / Hermes | ⚡ **Vladislava Kova**, 🛠️ **Mikhail Orlov**, ⚙️ **Viktor Hale**, 🎨 **Sofia Novak** | `openai/gpt-5.5` for Vladislava and Mikhail | Primary for OpenClaw default agents and Sofia |
-| `minimax/MiniMax-M3` | `minimax` | OpenClaw / Hermes | 📊 **Nadia Valeva**, 🔎 **Milena Petrova** | — | Nadia's and Milena's primary; also used as the MOA reference for Declan |
+| `minimax/MiniMax-M3` | `minimax` | OpenClaw / Hermes | ⚡ **Vladislava Kova**, 🛠️ **Mikhail Orlov**, 📊 **Nadia Valeva**, ⚙️ **Viktor Hale**, 🔎 **Milena Petrova**, 🎨 **Sofia Novak** | `openai/gpt-5.5` for Vladislava and Mikhail | Primary for all OpenClaw agents and BriarForge Milena/Sofia |
 | `moa/m3->grok-4.5` | `moa` | Hermes (MOA) | 🧭 **Aoife Brennan** | MOA preset — reference `xai-oauth/grok-4.5`, aggregator `minimax/minimax-m3` | Aoife primary is an MOA preset, not a single model |
 | `moa/grok-4.5->m3` | `moa` | Hermes (MOA) | 🏗️ **Declan Murphy** | MOA preset — reference `minimax/minimax-m3`, aggregator `xai-oauth/grok-4.5` | Declan primary is an MOA preset, not a single model |
-| `minimax/minimax-m2.7` | `minimax` | Hermes root | Hermes default | — | Hermes root default (CLI sessions) |
+| `minimax/minimax-m3` | `minimax` | Hermes root | Hermes default | — | Hermes root default (CLI sessions) |
 
 ---
 
