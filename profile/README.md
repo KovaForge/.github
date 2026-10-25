@@ -8,7 +8,7 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## The Team
 
-_Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.entries`), read live on 2026-10-18._
+_Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.entries`), read live on 2026-10-25._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
@@ -44,7 +44,7 @@ _Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.e
 
 ### BriarForge Members
 
-_Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-10-18._
+_Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-10-25._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
@@ -59,12 +59,12 @@ BriarForge operates under the KovaForge umbrella with separate leadership, memor
 
 ## Combined Model Inventory
 
-_Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/home/mike/.hermes/config.yaml` plus `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-10-18._
+_Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/home/mike/.hermes/config.yaml` plus `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-10-25._
 
 | Model Version | Provider | Platform | Member | Fallback Model | Notes |
 |---------------|----------|----------|--------|----------------|-------|
 | `openai/gpt-6-sol` | `openai` | OpenClaw | ⚡ **Vladislava Kova** | `minimax/MiniMax-M3`, `xai/grok-4.7` | Primary also set in OpenClaw defaults |
-| `minimax/MiniMax-M3` | `minimax` | OpenClaw | 🛠️ **Mikhail Orlov**, 📊 **Nadia Valeva**, ⚙️ **Viktor Hale** | `xai/grok-4.7` | Also primary for `mail_reader` (service agent) |
+| `minimax/MiniMax-M3` | `minimax` | OpenClaw | 🛠️ **Mikhail Orlov**, 📊 **Nadia Valeva**, ⚙️ **Viktor Hale** | `xai/grok-4.7` | Also fallback for `mail_reader` (service agent) |
 | `openai-codex/gpt-6-sol` | `openai-codex` | Hermes | 🧭 **Aoife Brennan** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | Also Hermes root default; Codex subscription endpoint |
 | `moa/grok-4.6->m3` | `moa` | Hermes (MOA) | 🔎 **Milena Petrova**, 🎨 **Sofia Novak** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | MOA preset, not a single model |
 | `moa/m3->grok-4.6` | `moa` | Hermes (MOA) | 🏗️ **Declan Murphy** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | MOA preset, not a single model |
