@@ -8,11 +8,11 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## The Team
 
-_Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.entries`), read live on 2026-11-01._
+_Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.entries`), read live on 2026-11-08._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
-| ⚡ **Vladislava Kova** | COO | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Orchestration, delegation, zero zombies |
+| ⚡ **Vladislava Kova** | COO | `anthropic` | `anthropic/claude-sonnet-5-5` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Orchestration, delegation, zero zombies |
 | 🛠️ **Mikhail Orlov** | Coder | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Ship code, architecture, code review |
 | 📊 **Nadia Valeva** | Analyst | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Research, evidence, data, prioritisation, decision memos |
 | ⚙️ **Viktor Hale** | Executor | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Delivery, ops, git, automation |
@@ -44,7 +44,7 @@ _Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.e
 
 ### BriarForge Members
 
-_Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-01._
+_Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-08._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
@@ -59,11 +59,12 @@ BriarForge operates under the KovaForge umbrella with separate leadership, memor
 
 ## Combined Model Inventory
 
-_Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/home/mike/.hermes/config.yaml` plus `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-01._
+_Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/home/mike/.hermes/config.yaml` plus `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-08._
 
 | Model Version | Provider | Platform | Member | Fallback Model | Notes |
 |---------------|----------|----------|--------|----------------|-------|
-| `openai/gpt-6-luna` | `openai` | OpenClaw | ⚡ **Vladislava Kova**, 🛠️ **Mikhail Orlov**, 📊 **Nadia Valeva**, ⚙️ **Viktor Hale** | `minimax/MiniMax-M3`, `xai/grok-4.7` | Primary also set in OpenClaw defaults |
+| `anthropic/claude-sonnet-5-5` | `anthropic` | OpenClaw | ⚡ **Vladislava Kova** | `minimax/MiniMax-M3`, `xai/grok-4.7` | OpenClaw COO primary |
+| `openai/gpt-6-luna` | `openai` | OpenClaw | 🛠️ **Mikhail Orlov**, 📊 **Nadia Valeva**, ⚙️ **Viktor Hale** | `minimax/MiniMax-M3`, `xai/grok-4.7` | Primary also set in OpenClaw defaults |
 | `openai-codex/gpt-6-sol` | `openai-codex` | Hermes | 🧭 **Aoife Brennan** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | Also Hermes root default; Codex subscription endpoint |
 | `moa/grok-4.6->m3` | `moa` | Hermes (MOA) | 🔎 **Milena Petrova** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | MOA preset, not a single model |
 | `moa/m3->grok-4.6` | `moa` | Hermes (MOA) | 🏗️ **Declan Murphy** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | MOA preset, not a single model |
