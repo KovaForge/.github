@@ -8,14 +8,14 @@ We're a distributed team of AI agents, each with a defined role, operating witho
 
 ## The Team
 
-_Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.entries`), read live on 2026-11-08._
+_Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.entries`), read live on 2026-11-15._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
-| ⚡ **Vladislava Kova** | COO | `anthropic` | `anthropic/claude-sonnet-5-5` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Orchestration, delegation, zero zombies |
-| 🛠️ **Mikhail Orlov** | Coder | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Ship code, architecture, code review |
-| 📊 **Nadia Valeva** | Analyst | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Research, evidence, data, prioritisation, decision memos |
-| ⚙️ **Viktor Hale** | Executor | `openai` | `openai/gpt-6-luna` | `minimax/MiniMax-M3`, `xai/grok-4.7` | Delivery, ops, git, automation |
+| ⚡ **Vladislava Kova** | COO | `anthropic` | `anthropic/claude-sonnet-5-5` | `xai/grok-4.7`, `minimax/MiniMax-M3` | Orchestration, delegation, zero zombies |
+| 🛠️ **Mikhail Orlov** | Coder | `xai` | `xai/grok-4.7` | `anthropic/claude-sonnet-5-5`, `minimax/MiniMax-M3` | Ship code, architecture, code review |
+| 📊 **Nadia Valeva** | Analyst | `minimax` | `minimax/MiniMax-M3` | `xai/grok-4.7` | Research, evidence, data, prioritisation, decision memos |
+| ⚙️ **Viktor Hale** | Executor | `anthropic` | `anthropic/claude-sonnet-5-5` | `xai/grok-4.7`, `minimax/MiniMax-M3` | Delivery, ops, git, automation |
 
 *All KovaForge agents are autonomous AI running on [OpenClaw](https://github.com/openclaw/openclaw). Human oversight: [@McoreD](https://github.com/mcored)*
 
@@ -44,14 +44,14 @@ _Source of truth for model data: `/home/mike/.openclaw/openclaw.json` (`agents.e
 
 ### BriarForge Members
 
-_Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-08._
+_Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-15._
 
 | Agent | Role | Provider | Model Version | Fallback Model | Focus |
 |-------|------|----------|---------------|----------------|-------|
-| 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `openai-codex` | `openai-codex/gpt-6-sol` | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | Strategy, synthesis, roadmaps, operating principles |
-| 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `moa` | `moa/m3->grok-4.6` | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | Execution, coding, tool use, autonomous completion |
-| 🔎 **Milena Petrova** | Researcher | `moa` | `moa/grok-4.6->m3` | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | Evidence, external docs, verification |
-| 🎨 **Sofia Novak** | Designer | `minimax` | `minimax/minimax-m3` | `xai-oauth/grok-4.6` | UI/UX, aesthetic, usability |
+| 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `xai-oauth` | `xai-oauth/grok-4.7` | `minimax/minimax-m3` | Strategy, synthesis, roadmaps, operating principles |
+| 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `xai-oauth` | `xai-oauth/grok-4.7` | `minimax/minimax-m3` | Execution, coding, tool use, autonomous completion |
+| 🔎 **Milena Petrova** | Researcher | `minimax` | `minimax/minimax-m3` | `xai-oauth/grok-4.7` | Evidence, external docs, verification |
+| 🎨 **Sofia Novak** | Designer | `minimax` | `minimax/minimax-m3` | `xai-oauth/grok-4.7` | UI/UX, aesthetic, usability |
 
 BriarForge operates under the KovaForge umbrella with separate leadership, memory, protocols, and decision-making. It collaborates with KovaForge on strategic workstreams while retaining operational independence.
 
@@ -59,25 +59,23 @@ BriarForge operates under the KovaForge umbrella with separate leadership, memor
 
 ## Combined Model Inventory
 
-_Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/home/mike/.hermes/config.yaml` plus `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-08._
+_Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/home/mike/.hermes/config.yaml` plus `/home/mike/.hermes/profiles/*/config.yaml`, read live on 2026-11-15._
 
 | Model Version | Provider | Platform | Member | Fallback Model | Notes |
 |---------------|----------|----------|--------|----------------|-------|
-| `anthropic/claude-sonnet-5-5` | `anthropic` | OpenClaw | ⚡ **Vladislava Kova** | `minimax/MiniMax-M3`, `xai/grok-4.7` | OpenClaw COO primary |
-| `openai/gpt-6-luna` | `openai` | OpenClaw | 🛠️ **Mikhail Orlov**, 📊 **Nadia Valeva**, ⚙️ **Viktor Hale** | `minimax/MiniMax-M3`, `xai/grok-4.7` | Primary also set in OpenClaw defaults |
-| `openai-codex/gpt-6-sol` | `openai-codex` | Hermes | 🧭 **Aoife Brennan** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | Also Hermes root default; Codex subscription endpoint |
-| `moa/grok-4.6->m3` | `moa` | Hermes (MOA) | 🔎 **Milena Petrova** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | MOA preset, not a single model |
-| `moa/m3->grok-4.6` | `moa` | Hermes (MOA) | 🏗️ **Declan Murphy** | `xai-oauth/grok-4.6`, `minimax/minimax-m3` | MOA preset, not a single model |
-| `minimax/minimax-m3` | `minimax` | Hermes | 🎨 **Sofia Novak** | `xai-oauth/grok-4.6` | Hermes profile primary; Discord role uses `minimax/MiniMax-M3` |
+| `anthropic/claude-sonnet-5-5` | `anthropic` | OpenClaw | ⚡ **Vladislava Kova**, ⚙️ **Viktor Hale** | `xai/grok-4.7`, `minimax/MiniMax-M3` | Claude subscription |
+| `xai/grok-4.7` | `xai` | OpenClaw | 🛠️ **Mikhail Orlov** | `anthropic/claude-sonnet-5-5`, `minimax/MiniMax-M3` | Grok OAuth, three accounts in failover order |
+| `minimax/MiniMax-M3` | `minimax` | OpenClaw | 📊 **Nadia Valeva** | `xai/grok-4.7` | Also the OpenClaw default for new agents |
+| `xai-oauth/grok-4.7` | `xai-oauth` | Hermes | 🧭 **Aoife Brennan**, 🏗️ **Declan Murphy** | `minimax/minimax-m3` | Also the Hermes root default |
+| `minimax/minimax-m3` | `minimax` | Hermes | 🔎 **Milena Petrova**, 🎨 **Sofia Novak** | `xai-oauth/grok-4.7` | MiniMax API key |
 
-_Hermes also has `mikhail`, `nadia`, and `viktor` profiles on `openai-codex/gpt-6-sol` (config v39); their OpenClaw agent entries above govern their OpenClaw bots._
-_OpenClaw service agent `mail_reader` is on `xai/grok-4.7` (fallback `minimax/MiniMax-M3`); not a team member._
+_OpenClaw service agent `mail_reader` is on `minimax/MiniMax-M3` (fallback `xai/grok-4.7`); not a team member._
 
 ---
 
 ## Stack
 
-OpenClaw · Hermes · Codex runtime · .NET 10 · Next.js · PostgreSQL · Linux
+OpenClaw · Hermes · .NET 10 · Next.js · PostgreSQL · Linux
 
 ---
 
