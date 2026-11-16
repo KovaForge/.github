@@ -50,8 +50,8 @@ _Source of truth for model data: `/home/mike/.hermes/config.yaml` and `/home/mik
 |-------|------|----------|---------------|----------------|-------|
 | 🧭 **Aoife Brennan** | Lead Strategist / Hermes Prime | `xai-oauth` | `xai-oauth/grok-4.7` | `minimax/minimax-m3` | Strategy, synthesis, roadmaps, operating principles |
 | 🏗️ **Declan Murphy** | Lead Executor / Hermes Delta | `xai-oauth` | `xai-oauth/grok-4.7` | `minimax/minimax-m3` | Execution, coding, tool use, autonomous completion |
-| 🔎 **Milena Petrova** | Researcher | `minimax` | `minimax/minimax-m3` | `xai-oauth/grok-4.7` | Evidence, external docs, verification |
-| 🎨 **Sofia Novak** | Designer | `minimax` | `minimax/minimax-m3` | `xai-oauth/grok-4.7` | UI/UX, aesthetic, usability |
+| 🔎 **Milena Petrova** | Researcher | `claude-subscription-directsdk-experimental` | `claude-subscription-directsdk-experimental/claude-haiku-5-5` | `minimax/minimax-m3`, `xai-oauth/grok-4.7` | Evidence, external docs, verification |
+| 🎨 **Sofia Novak** | Designer | `claude-subscription-directsdk-experimental` | `claude-subscription-directsdk-experimental/claude-haiku-5-5` | `minimax/minimax-m3`, `xai-oauth/grok-4.7` | UI/UX, aesthetic, usability |
 
 BriarForge operates under the KovaForge umbrella with separate leadership, memory, protocols, and decision-making. It collaborates with KovaForge on strategic workstreams while retaining operational independence.
 
@@ -67,7 +67,8 @@ _Source of truth: OpenClaw `/home/mike/.openclaw/openclaw.json` and Hermes `/hom
 | `xai/grok-4.7` | `xai` | OpenClaw | 🛠️ **Mikhail Orlov** | `anthropic/claude-sonnet-5-5`, `minimax/MiniMax-M3` | Grok OAuth, three accounts in failover order |
 | `minimax/MiniMax-M3` | `minimax` | OpenClaw | 📊 **Nadia Valeva** | `xai/grok-4.7` | Also the OpenClaw default for new agents |
 | `xai-oauth/grok-4.7` | `xai-oauth` | Hermes | 🧭 **Aoife Brennan**, 🏗️ **Declan Murphy** | `minimax/minimax-m3` | Also the Hermes root default |
-| `minimax/minimax-m3` | `minimax` | Hermes | 🔎 **Milena Petrova**, 🎨 **Sofia Novak** | `xai-oauth/grok-4.7` | MiniMax API key |
+| `claude-subscription-directsdk-experimental/claude-haiku-5-5` | `claude-subscription-directsdk-experimental` | Hermes | 🔎 **Milena Petrova**, 🎨 **Sofia Novak** | `minimax/minimax-m3`, `xai-oauth/grok-4.7` | Claude Haiku 5.5 through Nous Research's official plugin, on the Claude subscription via the Claude Code CLI |
+| `minimax/minimax-m3` | `minimax` | OpenClaw / Hermes fallback | (fallback only) | | MiniMax API key |
 
 _OpenClaw service agent `mail_reader` is on `minimax/MiniMax-M3` (fallback `xai/grok-4.7`); not a team member._
 
